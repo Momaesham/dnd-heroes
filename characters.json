@@ -91,7 +91,7 @@
     ],
     "currency": {
       "gold": 2,
-      "silver": 0,
+      "silver": 10,
       "copper": 0
     }
   }

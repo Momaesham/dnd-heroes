@@ -706,25 +706,24 @@ function viewSheet(id, back) {
         ${STATS.map(s => `<div class="stat-box">
           <div class="stat-lbl">${s.l}</div>
           <div class="stat-val">${st[s.k]||10}</div>
-          <div class="stat-mod">${mod(st[s.k]||10)}</div>
         </div>`).join('')}
       </div>
     </div>
     ${(c.weapons||[]).length ? `<div class="section"><div class="sec-title">Владение оружием</div>
       ${(c.weapons||[]).map(w => `<div class="list-row">
-        <span class="lr-name">⚔️ ${h(w.name)}</span>
+        <span class="lr-name">${h(w.name)}</span>
         <span class="lr-val">${h(w.mod)}</span>
       </div>`).join('')}
     </div>` : ''}
     ${(c.abilities||[]).length ? `<div class="section"><div class="sec-title">Особые навыки</div>
       ${(c.abilities||[]).map(a => `<div class="list-row ability-row">
-        <span class="lr-name">✨ ${h(a.name)}</span>
+        <span class="lr-name">${h(a.name)}</span>
         ${a.desc ? `<div class="lr-desc">${h(a.desc)}</div>` : ''}
       </div>`).join('')}
     </div>` : ''}
     ${(c.equip||[]).length ? `<div class="section"><div class="sec-title">Снаряжение</div>
       ${(c.equip||[]).map(e => `<div class="list-row">
-        <span class="lr-name">🎒 ${h(e.name)}</span>
+        <span class="lr-name">${h(e.name)}</span>
         <span class="lr-val">× ${e.qty||1}</span>
       </div>`).join('')}
     </div>` : ''}

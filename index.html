@@ -435,9 +435,9 @@ const GH_REPO  = 'НАЗВАНИЕ_РЕПОЗИТОРИЯ';</code>
       <div class="fsec">
         <div class="fsec-title">Валюта</div>
         <div class="fgrid-3">
-          <div class="fgroup"><label class="flabel">🥇 Золотые</label><input type="number" id="f-gold" placeholder="0" min="0"></div>
-          <div class="fgroup"><label class="flabel">🥈 Серебряные</label><input type="number" id="f-silver" placeholder="0" min="0"></div>
-          <div class="fgroup"><label class="flabel">🥉 Медные</label><input type="number" id="f-copper" placeholder="0" min="0"></div>
+          <div class="fgroup"><label class="flabel">🟡 Золотые</label><input type="number" id="f-gold" placeholder="0" min="0"></div>
+          <div class="fgroup"><label class="flabel">⚪ Серебряные</label><input type="number" id="f-silver" placeholder="0" min="0"></div>
+          <div class="fgroup"><label class="flabel">🟤 Медные</label><input type="number" id="f-copper" placeholder="0" min="0"></div>
         </div>
       </div>
 
@@ -731,9 +731,9 @@ function viewSheet(id, back) {
     <div class="section">
       <div class="sec-title">Валюта</div>
       <div class="cur-row">
-        <div class="cur-item"><span class="cur-icon">🥇</span><div><div class="cur-amt">${cur.gold||0}</div><div class="cur-lbl">Золото</div></div></div>
-        <div class="cur-item"><span class="cur-icon">🥈</span><div><div class="cur-amt">${cur.silver||0}</div><div class="cur-lbl">Серебро</div></div></div>
-        <div class="cur-item"><span class="cur-icon">🥉</span><div><div class="cur-amt">${cur.copper||0}</div><div class="cur-lbl">Медь</div></div></div>
+        <div class="cur-item"><span class="cur-icon">🟡</span><div><div class="cur-amt">${cur.gold||0}</div><div class="cur-lbl">Золото</div></div></div>
+        <div class="cur-item"><span class="cur-icon">⚪</span><div><div class="cur-amt">${cur.silver||0}</div><div class="cur-lbl">Серебро</div></div></div>
+        <div class="cur-item"><span class="cur-icon">🟤</span><div><div class="cur-amt">${cur.copper||0}</div><div class="cur-lbl">Медь</div></div></div>
       </div>
     </div>`;
   show('v-sheet');

@@ -10,10 +10,10 @@
     "stats": {
       "str": 4,
       "con": 2,
-      "wis": 10,
-      "dex": 10,
+      "wis": 1,
+      "dex": 1,
       "int": -2,
-      "cha": 10
+      "cha": 1
     },
     "weapons": [
       {
